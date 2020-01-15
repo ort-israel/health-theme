@@ -1,0 +1,63 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Premier\n"
+"POT-Creation-Date: 2018-03-26 12:36+0300\n"
+"PO-Revision-Date: 2018-03-26 12:36+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: he_IL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.1\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _;__;_e;__e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: ..\n"
+"X-Poedit-SearchPath-2: .\n"
+
+#: ../footer.php:31
+msgid "skip to navigation"
+msgstr ""
+
+#: ../header.php:48 ../header.php:84
+msgid "Toggle navigation"
+msgstr ""
+
+#: ../header.php:61 ../header.php:97
+#, php-format
+msgid "Please setup Menu <a href=\"%s\">here</a>"
+msgstr ""
+
+#: ../loop/page.php:13 ../loop/single.php:14
+msgid "here we are"
+msgstr "אנחנו נמצאים כאן"
+
+#: ../loop/page.php:37 ../loop/single.php:50
+msgid "&laquo; Previous"
+msgstr ""
+
+#: ../loop/page.php:38 ../loop/single.php:51
+msgid "Next &raquo;"
+msgstr ""
+
+#: ../loop/single.php:32
+msgid "No Comments"
+msgstr ""
+
+#: ../loop/single.php:32
+msgid "One Comment"
+msgstr ""
+
+#: ../loop/single.php:32
+msgid "% Comments"
+msgstr ""
+
+#~ msgid "Read More"
+#~ msgstr "לפרטים"
+
+#, fuzzy
+#~| msgid "Read More"
+#~ msgid "Read MoreM"
+#~ msgstr "לפרטים"

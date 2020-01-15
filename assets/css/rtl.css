@@ -1,0 +1,10 @@
+@import "../../../everest/assets/css/rtl.min.css";
+
+/* Your CSS code goes here
+-------------------------------------- */
+body.rtl #header.logo-left .nav-main, body.rtl .sticky-header.logo-left .nav-main{
+    float: right;
+}
+body.rtl #primary #content #main header.container #breadcrumbs{
+    float: right;
+}
