@@ -3,6 +3,9 @@
 /* Your CSS code goes here
 --------------------------------------------------- */
 /* Tsofiya 27/11/2019 : Add .tag , .search style
+
+   Button style in step calculator plugin since styled
+   button appear in its page
 ----------------------------------------------------*/
 
 body{
@@ -99,9 +102,12 @@ body{
     font-weight: normal;
     font-style: normal;
 }
+h1, h2, h3, h4, h5, h6{
+    font-family:'OpenSansHebrewCondensed-ExtraBold' !important;
+    font-weight: normal;
+}
 
 h4{
-    font-family:'OpenSansHebrewCondensed-ExtraBold' !important;
     letter-spacing: 1px;
 }
 .home h4{
@@ -110,6 +116,10 @@ h4{
 p, p span{
     color: #3b3c3b !important;
     font-family: 'OpenSansHebrewCondensed-Regular' !important;
+}
+
+a{
+    color: #045d5c;
 }
 
 h2 a{
@@ -209,6 +219,7 @@ body.rtl .small-thumbnail .inbox{
     color: #ffffff !important;
 }
 #primary .boxes a{
+    font-family:'OpenSansHebrewCondensed-Regular';
     color: #ffffff !important;
 }
 .entry-date{
@@ -297,9 +308,13 @@ body.rtl .small-thumbnail .inbox{
     letter-spacing: 1px !important;
     font-weight: normal !important;
 }
-#page-header .title-primary span{
+#page-header .title-primary h1{
     border-style: none !important;
     padding: 0 !important;
+    color: #fff !important;
+    font-size: 60px !important;
+    line-height: 240px;
+    letter-spacing: 1px !important;
 }
 
 #breadcrumbs .separator::before{
@@ -313,21 +328,17 @@ body.rtl .small-thumbnail .inbox{
 .single #breadcrumbs,nav.post-navigation
 {
     font-family: OpenSansHebrewCondensed-Regular !important;
+    margin-bottom: 0;
 }
 .page h3,
 .category h3,
 .tag h3,
 .search h3{
-    font-family:'OpenSansHebrewCondensed-ExtraBold' !important;
     color: #3b3c3b;
     font-size: 25px;
     font-weight: normal;
 }
-.category h1,
-.tag h1,
-.search h1{
-    font-family: OpenSansHebrewCondensed-ExtraBold !important;
-}
+
 .page ul li{
     color: #3b3c3b;
     font-size: 17px;
@@ -358,6 +369,7 @@ body.rtl .small-thumbnail .inbox{
 .tag .entry-excerpt p,
 .search .entry-excerpt p{
     font-size: 17px !important;
+    line-height: 1.5;
 }
 .grid-item .inbox:hover{
     border-color:#045d5c !important;
@@ -403,14 +415,15 @@ article.post .image-link a:focus .overlay-image{
     font-family: OpenSansHebrewCondensed-ExtraBold;
     font-size: 50px;
 }
-.single #primary .container a{
+/*.single #primary .container a,
+.page #primary .container a{
     color: #045d5c !important;
-}
+}*/
 .single a:hover{
     text-decoration: underline !important;
 }
+
 .single h4 {
-    font-family: 'OpenSansHebrewCondensed-ExtraBold' !important;
     font-size: 25px !important;
     letter-spacing: 0px;
 }
@@ -515,6 +528,44 @@ article.post .image-link a:focus .overlay-image{
             line-height: 1px !important;
         }
     }
+}
+
+@media screen and (max-width: 767px){
+    .home .pre-post .image-link{
+        width: 100%;
+    }
+
+    .home .pre-post .image-link img{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    .home .pre-post .inbox{
+        padding: 0 25px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .home .pre-post .image-link{
+        max-height: 220px;
+    }
+
+    .home .pre-post .inbox{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        text-align: right;
+    }
+
+    .home .recent-post.media .pull-left{
+        width: 100%;
+    }
+
+    .home .pre-post .media-body{
+        text-align: right;
+    }
+
 }
 
 
