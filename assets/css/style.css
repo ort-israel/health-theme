@@ -121,6 +121,13 @@ p, p span{
 a{
     color: #045d5c;
 }
+.elementor a{
+    word-break: break-all;
+}
+/* for cases there is a span inside a (because span color is set with !important)*/
+.elementor a span{
+    color: #045d5c !important;
+}
 
 h2 a{
     color: #045d5c !important;
