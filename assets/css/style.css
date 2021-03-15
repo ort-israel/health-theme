@@ -19,9 +19,7 @@ body{
     color: #3b3c3b !important;
     font-weight: normal !important;
 }
-/*a:active{
-   outline: 2px dotted black !important;
-}*/
+
 .nav-main .sf-menu li a:focus,.nav-main .sf-menu li a:active{
     outline: 2px dotted black ;
 }
@@ -176,11 +174,14 @@ body.rtl .media .pull-left{
 .elementor-1822 .elementor-element.elementor-element-fe4b034 .elementor-text-editor{
     letter-spacing: 0px;
 }
-.elementor-portfolio-item__overlay{
-    background-color: hsla(0,0%,0%,.45);
+div.elementor-portfolio-item__overlay{
+    background-color: hsla(0,0%,0%,.5);
 }
-.elementor-portfolio-item__title{
-    border-color:#d3db2f !important;
+.elementor-portfolio-item__overlay .elementor-portfolio-item__title{
+    color: #d3db2f !important;
+    padding: 10px 15px;
+    border: 1px solid #d3db2f;
+    align-self: center;
 }
 
 .elementor-column-gap-default > .elementor-row > .elementor-column > .elementor-element-populated{
@@ -207,13 +208,19 @@ body.rtl .small-thumbnail .inbox{
     letter-spacing:0.2px !important;
     margin-bottom: 0 !important;
 }
-.pre-post .image-link{
-    background-color:#000000 !important;
+
+.image-link:hover img{
+    opacity: 1;
 }
-.pre-post .image-link:hover{
-    background-color:#000000 !important;
-    opacity: 0.45;
+
+.image-link .overlay-image{
+    background-color: hsla(0,0%,0%,.5);
 }
+
+.image-link .overlay-title{
+    transition: all .3s ease-in .1s;
+}
+
 .pre-post .image-link .overlay-image + .overlay-title figcaption{
     border-color:#d3db2f;
     color: #d3db2f;
@@ -224,6 +231,7 @@ body.rtl .small-thumbnail .inbox{
 }
 #primary .boxes .elementor-cta:hover{
     color: #ffffff !important;
+    text-decoration: none;
 }
 #primary .boxes a{
     font-family:'OpenSansHebrewCondensed-Regular';
@@ -355,13 +363,9 @@ body.rtl .small-thumbnail .inbox{
 .category .image-link,
 .tag .image-link,
 .search .image-link{
-    background-color:rgba(0, 0, 0, .7) !important;
+    background-color: hsla(0,0%,0%,.5);
 }
-.image-link:hover{
-    background-color:#000000 !important;
-    filter: alpha(opacity=50) !important;
-    opacity: 0.7 !important;
-}
+
 .page .image-link .overlay-image + .overlay-title figcaption,
 .category .image-link .overlay-image + .overlay-title figcaption,
 .tag .image-link .overlay-image + .overlay-title figcaption,
@@ -370,6 +374,7 @@ body.rtl .small-thumbnail .inbox{
     border-color: #d3db2f !important;
     color: #d3db2f !important;
     font-family: OpenSansHebrewCondensed-Regular !important;
+    border-radius: 5px;
 }
 .page .entry-excerpt p,
 .category .entry-excerpt p,
@@ -422,10 +427,7 @@ article.post .image-link a:focus .overlay-image{
     font-family: OpenSansHebrewCondensed-ExtraBold;
     font-size: 50px;
 }
-/*.single #primary .container a,
-.page #primary .container a{
-    color: #045d5c !important;
-}*/
+
 .single a:hover{
     text-decoration: underline !important;
 }
